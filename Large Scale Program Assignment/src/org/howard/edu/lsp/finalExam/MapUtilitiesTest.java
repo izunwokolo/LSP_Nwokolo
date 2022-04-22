@@ -42,11 +42,12 @@ class MapUtilitiesTest {
 		map5.put("Bob", "Happy");
 		map5.put("Izu", "Fat");
 	
-		assertEquals("error in commonPairs",MapUtilities.commonKeyValuePairs(map1,map2),2);
-		assertEquals("error in commonPairs",MapUtilities.commonKeyValuePairs(map1,map3),0);
-		assertEquals("error in commonPairs",MapUtilities.commonKeyValuePairs(map3,map4),0);
 		assertEquals("error in commonPairs",MapUtilities.commonKeyValuePairs(map1,map5),1);
 		assertEquals("error in commonPairs",MapUtilities.commonKeyValuePairs(map5,map1),1);
+		assertEquals("error in commonPairs",MapUtilities.commonKeyValuePairs(map1,map2),2);
+		assertEquals("error in commonPairs",MapUtilities.commonKeyValuePairs(map3,map4),0);
+		assertEquals("error in commonPairs",MapUtilities.commonKeyValuePairs(map1,map3),0);
+		
 		
 	}
 	
