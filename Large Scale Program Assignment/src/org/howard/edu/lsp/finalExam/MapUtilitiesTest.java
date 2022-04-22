@@ -17,7 +17,7 @@ import org.junit.jupiter.api.DisplayName;
 class MapUtilitiesTest {
 
 	@Test
-	public void testcommonPairs() throws NullMapException {
+	public void testcommonKeyValuePairs() throws NullMapException {
 		// TODO Auto-generated method stub
 		HashMap<String, String> map1 = new HashMap<>();
 
@@ -52,7 +52,7 @@ class MapUtilitiesTest {
 	
 	@Test
 	@DisplayName("testcommonPairs throws exception")
-	public void testcommonPairs_THROWS_EXCEPTION() {
+	public void testcommonKeyValuePairs_THROWS_EXCEPTION() {
 		HashMap<String, String> map1 = null;
 		HashMap<String,String> map2 = null;
 		HashMap<String, String> map3 = new HashMap<>();
